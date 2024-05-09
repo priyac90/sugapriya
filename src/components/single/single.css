@@ -1,0 +1,60 @@
+@import "../../Styles/responsiveness.css";
+
+.single {
+    display: flex;
+  }
+  
+  @media (min-width: 1200px) {
+    .single {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+  
+  .single .view {
+    flex: 1;
+  }
+  
+  .single .view .info .topInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .single .view .info .topInfo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .single .view .info .topInfo h1 {
+    font-weight: 500;
+  }
+  
+  .single .view .info .details {
+    font-size: 18px;
+  }
+  
+  .single .view .info .details .item {
+    margin: 30px 0px;
+  }
+  
+  .single .view .info .details .item .itemTitle {
+    font-weight: 600;
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+  
+  .single .view hr {
+    width: 90%;
+    height: 0;
+    border: 0.5px solid gray;
+    margin: 20px 0px;
+  }
+  
+  @media (max-width: 768px) {
+    .single .view hr {
+      display: none;
+    }
+  }

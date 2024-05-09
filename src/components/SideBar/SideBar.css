@@ -1,0 +1,9 @@
+.icons{
+    width: 34px;
+    height:34px;
+}
+.sidebar{
+    flex:1;
+    border-right: 0.5px solid lightgrey;
+    min-height:100vh;
+}
